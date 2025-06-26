@@ -1,0 +1,30 @@
+{
+  "name": "photobooth-app",
+  "version": "1.0.0",
+  "description": "A modern web-based photobooth application with 3-second countdown and 1x3 photo strip layout",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "photobooth",
+    "camera",
+    "photo",
+    "web-app",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "PhotoBooth App",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/photobooth-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/photobooth-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/photobooth-app#readme"
+} 

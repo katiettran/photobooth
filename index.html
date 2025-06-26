@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBooth - Capture Your Memories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📸 PhotoBooth</h1>
+            <p>Capture your memories in style!</p>
+        </header>
+
+        <main>
+            <!-- Camera View -->
+            <div class="camera-section">
+                <video id="video" autoplay playsinline muted></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                
+                <!-- Countdown Overlay -->
+                <div id="countdown" class="countdown-overlay">
+                    <div class="countdown-number">3</div>
+                </div>
+
+                <!-- Camera Controls -->
+                <div class="camera-controls">
+                    <button id="startCamera" class="btn btn-primary">
+                        <span class="icon">📷</span>
+                        Start Camera
+                    </button>
+                    <button id="takePhoto" class="btn btn-secondary" disabled>
+                        <span class="icon">⚡</span>
+                        Take Photo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Photo Frame -->
+            <div class="photo-frame">
+                <h2>Your Photo Strip</h2>
+                <div class="frame-container">
+                    <div class="photo-slot" id="photo1">
+                        <div class="placeholder">Photo 1</div>
+                    </div>
+                    <div class="photo-slot" id="photo2">
+                        <div class="placeholder">Photo 2</div>
+                    </div>
+                    <div class="photo-slot" id="photo3">
+                        <div class="placeholder">Photo 3</div>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="resetPhotos" class="btn btn-danger">
+                        <span class="icon">🔄</span>
+                        Reset All
+                    </button>
+                    <button id="downloadStrip" class="btn btn-success" disabled>
+                        <span class="icon">💾</span>
+                        Download Strip
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ol>
+                <li>Click "Start Camera" to enable your camera</li>
+                <li>Position yourself in the frame</li>
+                <li>Click "Take Photo" - you'll get a 3-second countdown</li>
+                <li>Repeat until all 3 photos are taken</li>
+                <li>Download your photo strip!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/photobooth.js"></script>
+</body>
+</html> 
