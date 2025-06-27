@@ -69,14 +69,6 @@ Edit the `startPhotoCapture()` method in `js/photobooth.js`:
 let count = 3; // Change this number to adjust countdown duration
 ```
 
-### Modifying Photo Strip Layout
-Adjust the dimensions in the `downloadPhotoStrip()` method:
-```javascript
-const photoWidth = 400;  // Width of each photo
-const photoHeight = 300; // Height of each photo
-const spacing = 20;      // Space between photos
-```
-
 ### Styling Changes
 All visual styling can be modified in `css/style.css`. The app uses CSS custom properties and modern layout techniques for easy customization.
 
@@ -97,13 +89,6 @@ All visual styling can be modified in `css/style.css`. The app uses CSS custom p
 - Ensure JavaScript is enabled
 - Check browser console for errors
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve the photobooth app!
 
 ---
 
